@@ -1,0 +1,216 @@
+{
+	"id": "74ede0d3-5e6f-4afb-a882-3e405102abb5",
+	"name": "Public SOAP APIs",
+	"timestamp": "2025-02-20T20:36:32.076Z",
+	"collection_id": "12652027-8136e93c-9a92-409e-a8e8-d1e450e70f7b",
+	"folder_id": "12652027-ab2cf143-f3cb-4c75-a2f6-bc43e2311030",
+	"environment_id": "12652027-44309376-9e29-4683-8865-62e744125f74",
+	"totalPass": 24,
+	"delay": "300",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-02-20T20:36:30.573Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3209c316-a107-4877-8317-96d8f1ee777e",
+			"name": "Is Valid ISBN13 Number",
+			"url": "http://webservices.daehosting.com/services/isbnservice.wso",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Тіло запиту не повинно бути порожнім": true,
+				"Запит містить <soap:Envelope>": true,
+				"<soap:Envelope> має правильний xmlns": true,
+				"Запит містить <soap:Body>": true,
+				"Запит містить метод IsValidISBN13": true,
+				"Код відповіді 200 OK": true,
+				"Відповідь містить <soap:Envelope>": true,
+				"Відповідь містить <soap:Body>": true,
+				"Відповідь містить IsValidISBN13Response": true,
+				"Відповідь містить IsValidISBN13Result": true,
+				"Заголовки відповіді містять необхідні значення": true,
+				"Response time is less than 500": true,
+				"Заголовок Content-Type у запиті": true
+			},
+			"testPassFailCounts": {
+				"Тіло запиту не повинно бути порожнім": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Запит містить <soap:Envelope>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"<soap:Envelope> має правильний xmlns": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Запит містить <soap:Body>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Запит містить метод IsValidISBN13": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Код відповіді 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь містить <soap:Envelope>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь містить <soap:Body>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь містить IsValidISBN13Response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь містить IsValidISBN13Result": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Заголовки відповіді містять необхідні значення": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Заголовок Content-Type у запиті": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Тіло запиту не повинно бути порожнім": true,
+					"Запит містить <soap:Envelope>": true,
+					"<soap:Envelope> має правильний xmlns": true,
+					"Запит містить <soap:Body>": true,
+					"Запит містить метод IsValidISBN13": true,
+					"Код відповіді 200 OK": true,
+					"Відповідь містить <soap:Envelope>": true,
+					"Відповідь містить <soap:Body>": true,
+					"Відповідь містить IsValidISBN13Response": true,
+					"Відповідь містить IsValidISBN13Result": true,
+					"Заголовки відповіді містять необхідні значення": true,
+					"Response time is less than 500": true,
+					"Заголовок Content-Type у запиті": true
+				}
+			]
+		},
+		{
+			"id": "512997d1-29fd-4268-83fa-ab8117a4b7d1",
+			"name": "Is Valid ISBN10 Number",
+			"url": "http://webservices.daehosting.com/services/isbnservice.wso",
+			"time": 164,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Тіло запиту не пусте": true,
+				"Запит містить <soap:Envelope>": true,
+				"<soap:Envelope> має правильний xmlns": true,
+				"Запит містить <soap:Body>": true,
+				"Перевірка: Запит містить правильний ISBN": true,
+				"SOAP-запит має правильну структуру": true,
+				"Статус відповіді 200 OK": true,
+				"Перевірка заголовків": true,
+				"Перевірка коректності ISBN": true,
+				"Response time is less than 300": true,
+				"Заголовок Content-Type у запиті": true
+			},
+			"testPassFailCounts": {
+				"Тіло запиту не пусте": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Запит містить <soap:Envelope>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"<soap:Envelope> має правильний xmlns": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Запит містить <soap:Body>": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Перевірка: Запит містить правильний ISBN": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SOAP-запит має правильну структуру": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Статус відповіді 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Перевірка заголовків": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Перевірка коректності ISBN": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Заголовок Content-Type у запиті": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				164
+			],
+			"allTests": [
+				{
+					"Тіло запиту не пусте": true,
+					"Запит містить <soap:Envelope>": true,
+					"<soap:Envelope> має правильний xmlns": true,
+					"Запит містить <soap:Body>": true,
+					"Перевірка: Запит містить правильний ISBN": true,
+					"SOAP-запит має правильну структуру": true,
+					"Статус відповіді 200 OK": true,
+					"Перевірка заголовків": true,
+					"Перевірка коректності ISBN": true,
+					"Response time is less than 300": true,
+					"Заголовок Content-Type у запиті": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 374,
+	"collection": {
+		"requests": [
+			{
+				"id": "3209c316-a107-4877-8317-96d8f1ee777e",
+				"method": "POST"
+			},
+			{
+				"id": "512997d1-29fd-4268-83fa-ab8117a4b7d1",
+				"method": "POST"
+			}
+		]
+	}
+}
